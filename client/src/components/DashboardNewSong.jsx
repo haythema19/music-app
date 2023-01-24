@@ -136,7 +136,7 @@ export const DisabledButton = () => {
           fill="currentColor"
         />
       </svg>
-      Loading...
+      Đang tải...
     </button>
   );
 };
