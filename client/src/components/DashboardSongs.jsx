@@ -8,7 +8,11 @@ import AlertSuccess from "./AlertSuccess";
 import AlertError from "./AlertError";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare, faTrash, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlusSquare,
+  faTrash,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 const DashboardSongs = () => {
   const [songFilter, setSongFilter] = useState("");
@@ -49,7 +53,10 @@ const DashboardSongs = () => {
           to={"/dashboard/newSong"}
           className="flex items-center px-4 py-3 rounded-md hover:shadow-md cursor-pointer"
         >
-          <FontAwesomeIcon icon={faPlusSquare} className="text-headingColor text-3xl" />
+          <FontAwesomeIcon
+            icon={faPlusSquare}
+            className="text-headingColor text-3xl"
+          />
         </NavLink>
         <input
           type="text"
@@ -73,7 +80,10 @@ const DashboardSongs = () => {
               setFilteredSongs(null);
             }}
           >
-            <FontAwesomeIcon icon={faXmark} className="text-3xl cursor-pointer text-headingColor ml-3" />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className="text-3xl cursor-pointer text-headingColor ml-3"
+            />
           </motion.i>
         )}
       </div>
@@ -81,9 +91,7 @@ const DashboardSongs = () => {
       <div className="relative w-full my-4 p-4 py-12 rounded-md">
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold  text-headingColor">
-            <span className="text-sm font-semibold">
-              Hiện có:{" "}
-            </span>
+            <span className="text-sm font-semibold">Hiện có: </span>
             {filteredSongs ? filteredSongs?.length : allSongs?.length}
           </p>
         </div>
@@ -169,7 +177,7 @@ export const SongCard = ({ data, index }) => {
           className="absolute w-full z-10 inset-0 bg-card backdrop-blur-md flex flex-col items-center justify-center gap-3"
         >
           <p className="text-sm text-center text-textColor font-semibold">
-            Are you sure do you want to delete this song?
+            Bạn có chắc chắn muốn xóa bài hát này?
           </p>
 
           <div className="flex items-center gap-3">
@@ -205,7 +213,10 @@ export const SongCard = ({ data, index }) => {
 
       <div className="absolute bottom-1 right-2 flex items-center">
         <motion.i whileTap={{ scale: 0.75 }} onClick={() => setIsDeleted(true)}>
-          <FontAwesomeIcon icon={faTrash} className="text-base text-red-400 drop-shadow-md hover:text-red-600" />
+          <FontAwesomeIcon
+            icon={faTrash}
+            className="text-base text-red-400 drop-shadow-md hover:text-red-600"
+          />
         </motion.i>
       </div>
 
