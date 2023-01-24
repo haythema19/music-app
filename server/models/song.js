@@ -11,7 +11,7 @@ const SongSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    songURL: {
+    songUrl: {
       type: String,
       required: true,
     },
