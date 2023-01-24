@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://musicappapi.vercel.app/";
+const baseURL = "http://localhost:4000/";
 
 export const validateUser = async (token) => {
   try {
