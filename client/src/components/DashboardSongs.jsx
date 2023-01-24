@@ -185,13 +185,13 @@ export const SongCard = ({ data, index }) => {
               className="text-sm px-4 py-1 rounded-md text-white hover:shadow-md bg-teal-400"
               onClick={() => deleteObject(data._id)}
             >
-              Yes
+              Có
             </button>
             <button
               className="text-sm px-4 py-1 rounded-md text-white hover:shadow-md bg-gray-400"
               onClick={() => setIsDeleted(false)}
             >
-              No
+              Không
             </button>
           </div>
         </motion.div>
