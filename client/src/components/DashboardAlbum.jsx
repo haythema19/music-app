@@ -62,7 +62,7 @@ export const AlbumCard = ({ data, index }) => {
           className="absolute inset-0 p-2 bg-darkOverlay  backdrop-blur-md flex flex-col items-center justify-center gap-4"
         >
           <p className="text-gray-100 text-base text-center">
-            Are you sure do you want to delete this?
+            Bạn có chắc chắn muốn xóa không?
           </p>
           <div className="flex items-center w-full justify-center gap-3">
             <div className="bg-red-300 px-3 rounded-md">
