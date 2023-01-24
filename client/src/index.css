@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: #121212;
+  margin: 0;
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.rhap_container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: 100% !important;
+}
+
+.rhap_main-controls button {
+  margin: 0 10px !important;
+}
+
+.rhap_play-pause-button {
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover {
+  transform: scale(1.2);
+}
+
+.rhap_forward-button,
+.rhap_rewind-button,
+.rhap_skip-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_forward-button:hover,
+.rhap_rewind-button:hover,
+.rhap_skip-button:hover,
+.rhap_volume-button:hover,
+.rhap_repeat-button:hover {
+  transform: scale(1.2);
+  color: #555 !important;
+}
+
+.rhap_progress-filled {
+  background-color: green !important;
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background: #b4b4b4 !important;
+}
+
+.rhap_progress-indicator:hover,
+.rhap_volume-indicator:hover {
+  transform: scale(1.2);
+  background: green !important;
+}
+
+.rhap_download-progress {
+  background-color: #b3b3b3 !important;
+}
+
+.rhap_volume-container button {
+  margin-right: 20px !important;
+}
+
+.rhap_time {
+  color: #b3b3b3 !important;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    -90deg,
+    #fc6c8f,
+    #ff2ced,
+    #ffb86c,
+    #2cccff,
+    #20e3b2,
+    #ffcc70,
+    #c850c0,
+    #4158d0
+  ) !important;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
