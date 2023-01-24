@@ -11,8 +11,8 @@ export const filters = [
 ];
 
 export const filterByLanguage = [
-  { id: 1, name: "Vietnamese", value: "vietnamese" },
-  { id: 2, name: "English", value: "english" },
+  { id: 1, name: "Tiếng Việt", value: "vietnamese" },
+  { id: 2, name: "Tiếng Anh", value: "english" },
 
 ];
 

@@ -22,13 +22,13 @@ const Dashboard = () => {
           {/* prettier-ignore */}
           <NavLink to={"/dashboard/home"}><FontAwesomeIcon icon={faHouse} className="text-2xl text-textColor" /></NavLink>
           {/* prettier-ignore */}
-          <NavLink to={"/dashboard/user"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Users </NavLink>
+          <NavLink to={"/dashboard/user"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Người dùng </NavLink>
 
           {/* prettier-ignore */}
-          <NavLink to={"/dashboard/songs"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Songs </NavLink>
+          <NavLink to={"/dashboard/songs"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Bài hát </NavLink>
 
           {/* prettier-ignore */}
-          <NavLink to={"/dashboard/artist"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Artist </NavLink>
+          <NavLink to={"/dashboard/artist"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Ca sĩ </NavLink>
 
           {/* prettier-ignore */}
           <NavLink to={"/dashboard/albums"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles }> Albums </NavLink>

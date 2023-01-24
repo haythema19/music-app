@@ -53,7 +53,7 @@ const DashboardSongs = () => {
         </NavLink>
         <input
           type="text"
-          placeholder="Search here"
+          placeholder="Tìm kiếm..."
           className={`w-52 px-4 py-2 border ${
             isFocus ? "border-gray-500 shadow-md" : "border-gray-300"
           } rounded-md bg-transparent outline-none duration-150 transition-all ease-in-out text-base text-textColor font-semibold`}
@@ -82,7 +82,7 @@ const DashboardSongs = () => {
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold  text-headingColor">
             <span className="text-sm font-semibold">
-              Count :{" "}
+              Hiện có:{" "}
             </span>
             {filteredSongs ? filteredSongs?.length : allSongs?.length}
           </p>

@@ -40,7 +40,7 @@ const Filter = ({ setFilteredSongs }) => {
   };
   return (
     <div className="w-full my-4 px-6 py-4 flex items-center justify-start md:justify-center gap-10">
-      <FilterButtons filterData={artists} flag={"Artist"} />
+      <FilterButtons filterData={artists} flag={"Ca sĩ"} />
 
       <div className=" flex items-center gap-6 mx-4">
         {filters?.map((data) => (
@@ -58,7 +58,7 @@ const Filter = ({ setFilteredSongs }) => {
 
       <FilterButtons filterData={allAlbums} flag={"Albums"} />
 
-      <FilterButtons filterData={filterByLanguage} flag={"Language"} />
+      <FilterButtons filterData={filterByLanguage} flag={"Ngôn ngữ"} />
 
       <motion.i
         initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ const Filter = ({ setFilteredSongs }) => {
         whileTap={{ scale: 0.75 }}
         onClick={clearAllFilter}
       >
-        <MdClearAll className="text-textColor text-xl cursor-pointer" />
+        <MdClearAll className="text-textColor text-3xl cursor-pointer" />
       </motion.i>
     </div>
   );

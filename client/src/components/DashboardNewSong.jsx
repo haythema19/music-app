@@ -68,7 +68,7 @@ export const ImageUploader = ({
 
       (error) => {
         setAlert("error");
-        alertMsg("File upload failed.");
+        alertMsg("Tệp tải lên không thành công.");
         setTimeout(() => {
           setAlert(null);
         }, 4000);
@@ -80,7 +80,7 @@ export const ImageUploader = ({
           setProgress(0);
           isLoading(false);
           setAlert("success");
-          alertMsg("File uploaded successfully");
+          alertMsg("Tải tài liệu thành công.");
           setTimeout(() => {
             setAlert(null);
           }, 4000);
@@ -97,7 +97,7 @@ export const ImageUploader = ({
             <FontAwesomeIcon icon={faCloudUpload} />
           </p>
           <p className="text-lg text-center">
-            Click to upload {isImage ? "image" : "audio"}
+            Chọn để tải lên {isImage ? "ảnh" : "nhạc"}
           </p>
         </div>
       </div>
@@ -200,7 +200,7 @@ const DashboardNewSong = () => {
     const deleteRef = ref(storage, songURL);
     deleteObject(deleteRef).then(() => {
       setSetAlert("success");
-      setAlertMsg("File removed successfully");
+      setAlertMsg("Đã xóa tệp thành công");
       setTimeout(() => {
         setSetAlert(null);
       }, 4000);
@@ -212,7 +212,7 @@ const DashboardNewSong = () => {
   const saveSong = () => {
     if (!songImageUrl || !audioAsset || !songName) {
       setSetAlert("error");
-      setAlertMsg("Required fields are missing");
+      setAlertMsg("Các trường bắt buộc bị thiếu");
       setTimeout(() => {
         setSetAlert(null);
       }, 4000);
@@ -235,7 +235,7 @@ const DashboardNewSong = () => {
         });
       });
       setSetAlert("success");
-      setAlertMsg("Data saved successfully");
+      setAlertMsg("Đã lưu dữ liệu thành công");
       setTimeout(() => {
         setSetAlert(null);
       }, 4000);
@@ -258,17 +258,17 @@ const DashboardNewSong = () => {
         <div className="flex flex-col items-center justify-center gap-4">
           <input
             type="text"
-            placeholder="Type your song name"
+            placeholder="Tên bài hát"
             className="w-full p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent"
             value={songName}
             onChange={(e) => setSongName(e.target.value)}
           />
 
           <div className="flex w-full justify-between flex-wrap items-center gap-4">
-            <FilterButtons filterData={artists} flag={"Artist"} />
+            <FilterButtons filterData={artists} flag={"Ca sĩ"} />
             <FilterButtons filterData={allAlbums} flag={"Albums"} />
-            <FilterButtons filterData={filterByLanguage} flag={"Language"} />
-            <FilterButtons filterData={filters} flag={"Category"} />
+            <FilterButtons filterData={filterByLanguage} flag={"Ngôn ngữ"} />
+            <FilterButtons filterData={filters} flag={"Bộ lọc"} />
           </div>
 
           <div className="flex items-center justify-between gap-2 w-full flex-wrap">
@@ -347,7 +347,7 @@ const DashboardNewSong = () => {
                   className="px-8 py-2 rounded-md text-white bg-red-600 hover:shadow-lg"
                   onClick={saveSong}
                 >
-                  Send
+                  Tải lên
                 </motion.button>
               )}
             </div>
@@ -391,7 +391,7 @@ export const AddNewArtist = () => {
     const deleteRef = ref(storage, songURL);
     deleteObject(deleteRef).then(() => {
       setAlert("success");
-      setAlertMsg("File removed successfully");
+      setAlertMsg("Đã xóa tệp thành công");
       setTimeout(() => {
         setAlert(null);
       }, 4000);
@@ -402,7 +402,7 @@ export const AddNewArtist = () => {
   const saveArtist = () => {
     if (!artistCoverImage || !artistName) {
       setAlert("error");
-      setAlertMsg("Required fields are missing");
+      setAlertMsg("Các trường bắt buộc bị thiếu");
       setTimeout(() => {
         setAlert(null);
       }, 4000);
@@ -467,7 +467,7 @@ export const AddNewArtist = () => {
       <div className="flex flex-col items-center justify-center gap-4 ">
         <input
           type="text"
-          placeholder="Artist Name"
+          placeholder="Tên ca sĩ"
           className="w-full lg:w-300 p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent"
           value={artistName}
           onChange={(e) => setArtistName(e.target.value)}
@@ -508,7 +508,7 @@ export const AddNewArtist = () => {
               className="px-8 py-2 rounded-md text-white bg-red-600 hover:shadow-lg"
               onClick={saveArtist}
             >
-              Send
+              Tải lên
             </motion.button>
           )}
         </div>
@@ -545,7 +545,7 @@ export const AddNewAlbum = () => {
     const deleteRef = ref(storage, songURL);
     deleteObject(deleteRef).then(() => {
       setAlert("success");
-      setAlertMsg("File removed successfully");
+      setAlertMsg("Đã xóa tệp thành công");
       setTimeout(() => {
         setAlert(null);
       }, 4000);
@@ -556,7 +556,7 @@ export const AddNewAlbum = () => {
   const saveArtist = () => {
     if (!artistCoverImage || !artistName) {
       setAlert("error");
-      setAlertMsg("Required fields are missing");
+      setAlertMsg("Các trường bắt buộc bị thiếu");
       setTimeout(() => {
         setAlert(null);
       }, 4000);
@@ -620,7 +620,7 @@ export const AddNewAlbum = () => {
       <div className="flex flex-col items-center justify-center gap-4 ">
         <input
           type="text"
-          placeholder="Artist Name"
+          placeholder="Tên albums"
           className="w-full lg:w-300 p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent"
           value={artistName}
           onChange={(e) => setArtistName(e.target.value)}
@@ -635,7 +635,7 @@ export const AddNewAlbum = () => {
               className="px-8 py-2 rounded-md text-white bg-red-600 hover:shadow-lg"
               onClick={saveArtist}
             >
-              Send
+              Tải lên
             </motion.button>
           )}
         </div>

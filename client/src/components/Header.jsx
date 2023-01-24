@@ -27,7 +27,7 @@ const Header = () => {
             }
           >
             <FontAwesomeIcon icon={faHouse} className="mr-3" />
-            <span>Home</span>
+            <span>Trang chủ</span>
           </NavLink>
         </li>
         <li className="mx-5 p-2 justify-start">
@@ -38,7 +38,7 @@ const Header = () => {
             }
           >
             <FontAwesomeIcon icon={faMusic} className="mr-3" />
-            Musics
+            Nghe nhạc
           </NavLink>
         </li>
         <li className="mx-5 p-2 justify-start">
@@ -49,7 +49,7 @@ const Header = () => {
             }
           >
             <FontAwesomeIcon icon={faCrown} className="mr-3" />
-            Premium
+            Nâng cấp
           </NavLink>
         </li>
       </ul>

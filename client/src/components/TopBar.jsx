@@ -41,7 +41,7 @@ const TopBar = () => {
           type="text"
           value={searchTerm}
           className="w-full h-full p-2f bg-transparent text-sm text-black border-none outline-none "
-          placeholder="Search here ...."
+          placeholder="Tìm kiếm..."
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
@@ -78,17 +78,17 @@ const TopBar = () => {
           >
             <NavLink to={"/userProfile"}>
               <p className="text-base p-2 text-textColor duration-150 transition-all ease-in-out hover:bg-[#535353] hover:rounded-sm">
-                Profile
+                Người dùng
               </p>
             </NavLink>
             <p className="text-base p-2 text-textColor duration-150 transition-all ease-in-out hover:bg-[#535353] hover:rounded-sm">
-              My Favourites
+              Sở thích của tôi
             </p>
             {user?.user.role === "admin" && (
               <>
                 <NavLink to={"/dashboard/home"}>
                   <p className="text-base p-2 text-textColor duration-150 transition-all ease-in-out hover:bg-[#535353] hover:rounded-sm">
-                    Dashboard
+                  Bảng điều khiển
                   </p>
                 </NavLink>
               </>
@@ -97,7 +97,7 @@ const TopBar = () => {
               className="text-base p-2 text-textColor duration-150 transition-all ease-in-out hover:bg-[#535353] hover:rounded-sm"
               onClick={logout}
             >
-              Sign out
+              Đăng xuất
             </p>
           </motion.ul>
         )}

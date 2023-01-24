@@ -99,8 +99,8 @@ const Home = () => {
           <TopBar />
           {searchTerm.length > 0 && (
             <p className="-mt-5 ml-6 text-base text-textColor">
-              Searched for :
-              <span className="text-xl text-cartBg font-semibold">
+              Đang tìm kiếm:{" "}
+              <span className="text-xl text-headingColor font-semibold">
                 {searchTerm}
               </span>
             </p>

@@ -11,7 +11,7 @@ const DashboardUserCard = ({ data, index }) => {
   const [isUpdateRole, setIsUpdateRole] = useState(false);
 
   const [{ allUsers, user }, dispatch] = useStateValue();
-  const createdAt = moment(new Date(data.createdAt)).format("MMMM Do YYYY");
+  const createdAt = moment(new Date(data.createdAt)).format("DD/MM/YYYY");
 
   const UpdateUserRole = (userId, role) => {
     setIsLoading(true);
@@ -85,7 +85,7 @@ const DashboardUserCard = ({ data, index }) => {
             className="text-[10px]  font-semibold text-black px-1 bg-purple-200 rounded-sm hover:shadow-md"
             onClick={() => setIsUpdateRole(true)}
           >
-            {data.role === "admin" ? "Member" : "Admin"}
+            {data.role === "admin" ? "Thành viên" : "Admin"}
           </motion.p>
         )}
         {isUpdateRole && (
@@ -96,8 +96,8 @@ const DashboardUserCard = ({ data, index }) => {
             className="absolute z-10 top-6 right-4 rounded-md p-4 flex items-start flex-col gap-4 bg-[#383838] shadow-md"
           >
             <p className="text-textColor text-sm font-semibold">
-              Are you sure do u want to mark the user as{" "}
-              <span>{data.role === "admin" ? "Member" : "Admin"}</span> ?
+              Bạn có chắc chắn muốn chuyển người dùng thành{" "}
+              <span>{data.role === "admin" ? "Thành viên" : "Admin"}</span>?
             </p>
             <div className="flex items-center gap-4">
               <motion.button
@@ -106,18 +106,18 @@ const DashboardUserCard = ({ data, index }) => {
                 onClick={() =>
                   UpdateUserRole(
                     data._id,
-                    data.role === "admin" ? "member" : "admin"
+                    data.role === "admin" ? "Thành viên" : "admin"
                   )
                 }
               >
-                Yes
+                Có
               </motion.button>
               <motion.button
                 whileTap={{ scale: 0.75 }}
                 className="outline-none border-none text-sm px-4 py-1 rounded-md bg-gray-200 text-black hover:shadow-md"
                 onClick={() => setIsUpdateRole(false)}
               >
-                No
+                Không
               </motion.button>
             </div>
           </motion.div>

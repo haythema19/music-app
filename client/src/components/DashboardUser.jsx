@@ -42,7 +42,7 @@ const DashboardUser = () => {
       <div className="w-full flex items-center">
         <input
           type="text"
-          placeholder="Search here"
+          placeholder="Tìm kiếm..."
           className={`w-460 px-4 py-2 border ${
             isFocus ? "border-gray-500 shadow-md" : "border-gray-300"
           } rounded-md bg-transparent outline-none duration-150 transition-all ease-in-out text-base text-textColor font-semibold`}
@@ -71,7 +71,7 @@ const DashboardUser = () => {
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold text-headingColor">
             <span className="text-sm font-semibold text-headingColor">
-              Count :{" "}
+              Hiện có:{" "}
             </span>
             {filtereUsers ? filtereUsers?.length : allUsers?.length}
           </p>
@@ -79,17 +79,17 @@ const DashboardUser = () => {
 
         <div className="w-full min-w-[750px] flex items-center justify-between">
           {/* prettier-ignore */}
-          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Image</p>
+          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Avatar</p>
           {/* prettier-ignore */}
-          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Name</p>
+          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Tên</p>
           {/* prettier-ignore */}
           <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Email</p>
           {/* prettier-ignore */}
-          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Verified</p>
+          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Xác minh</p>
           {/* prettier-ignore */}
-          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Created</p>
+          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Tạo ngày</p>
           {/* prettier-ignore */}
-          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Role</p>{" "}
+          <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Vai trò</p>{" "}
         </div>
         {allUsers && !filtereUsers
           ? allUsers?.map((data, i) => (
