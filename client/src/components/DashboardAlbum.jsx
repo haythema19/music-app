@@ -66,13 +66,13 @@ export const AlbumCard = ({ data, index }) => {
           </p>
           <div className="flex items-center w-full justify-center gap-3">
             <div className="bg-red-300 px-3 rounded-md">
-              <p className="text-headingColor text-sm">Yes</p>
+              <p className="text-headingColor text-sm">Có</p>
             </div>
             <div
               className="bg-green-300 px-3 rounded-md"
               onClick={() => setIsDelete(false)}
             >
-              <p className="text-headingColor text-sm">No</p>
+              <p className="text-headingColor text-sm">Không</p>
             </div>
           </div>
         </motion.div>
