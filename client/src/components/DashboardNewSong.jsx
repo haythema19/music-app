@@ -488,7 +488,7 @@ export const AddNewArtist = () => {
 
         <div className="w-full lg:w-300 p-3 flex items-center rounded-md  shadow-sm border border-gray-300">
           <p className="text-base font-semibold text-gray-400">
-            https://www.instagram.com/
+            www.instagram.com/
           </p>
           <input
             type="text"
